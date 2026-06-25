@@ -6,9 +6,29 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300..700;1,300..700&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.lazyload.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.thumbs.css"
+  />
+
 </head>
 <body>
     <!-- <nav>
@@ -17,7 +37,102 @@
         <a class="pr_links" href="ampersand.html">Ampersand</a>
     </nav> -->
     <div class="container">
-        <h1>Snapdeal</h1>
+        <!-- <h1>Snapdeal</h1> -->
+
+        <div class="f-carousel" id="myCarousel">
+            <div
+              class="f-carousel__slide"
+              data-fancybox="gallery"
+              data-src="https://ksrahul.github.io/project_links/scoreAdTech.jpeg"
+              data-thumb-src="https://ksrahul.github.io/project_links/scoreAdTech.jpeg"
+            >
+              <img
+                data-lazy-src="https://ksrahul.github.io/project_links/scoreAdTech.jpeg"
+                
+                alt="Image #1"
+              />
+            </div>
+            <div
+              class="f-carousel__slide"
+              data-fancybox="gallery"
+              data-src="https://lipsum.app/id/58/1920x1080"
+              data-thumb-src="https://lipsum.app/id/58/1920x1080"
+            >
+              <img
+                data-lazy-src="https://lipsum.app/id/58/1920x1080"
+                width="1920"
+                height="1080"
+                alt="Image #2"
+              />
+            </div>
+            <div
+              class="f-carousel__slide"
+              data-fancybox="gallery"
+              data-src="https://lipsum.app/id/3/1920x1080"
+              data-thumb-src="https://lipsum.app/id/3/1920x1080"
+            >
+              <img
+                data-lazy-src="https://lipsum.app/id/3/1920x1080"
+                width="1920"
+                height="1080"
+                alt="Image #3"
+              />
+            </div>
+            <div
+              class="f-carousel__slide"
+              data-fancybox="gallery"
+              data-src="https://lipsum.app/id/62/1920x1080"
+              data-thumb-src="https://lipsum.app/id/62/1920x1080"
+            >
+              <img
+                data-lazy-src="https://lipsum.app/id/62/1920x1080"
+                width="1920"
+                height="1080"
+                alt="Image #4"
+              />
+            </div>
+            <div
+              class="f-carousel__slide"
+              data-fancybox="gallery"
+              data-src="https://lipsum.app/id/63/1920x1080"
+              data-thumb-src="https://lipsum.app/id/63/1920x1080"
+            >
+              <img
+                data-lazy-src="https://lipsum.app/id/63/1920x1080"
+                width="1920"
+                height="1080"
+                alt="Image #5"
+              />
+            </div>
+          </div>
     </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.lazyload.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.thumbs.umd.js"></script>
+    <script>
+        Carousel(
+          document.getElementById("myCarousel"),
+          {
+            // Your custom options
+          },
+          {
+            Lazyload,
+            Arrows,
+            Thumbs,
+          }
+        ).init();
+  
+        Fancybox.bind("[data-fancybox]", {
+          // Your custom options
+        });
+      </script>
 </body>
 </html>
