@@ -78,8 +78,29 @@
       object-fit: cover !important;
     }
 
+    .fancybox__toolbar {
+      display: none !important;
+    }
+
+    .f-carousel__arrow {
+      background: rgba(255, 255, 255, 0.9) !important;
+      color: #333 !important;
+      width: 44px !important;
+      height: 44px !important;
+      border-radius: 50% !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .f-carousel__arrow:hover {
+      background: #fff !important;
+    }
+
     .f-thumbs.is-modern {
       max-height: fit-content;
+    }
+
+    body .f-carousel__toolbar__column.is-right {
+      display: none;
     }
   </style>
 
@@ -149,6 +170,7 @@
       Images: {
         initialSize: "fit",
       },
+      Toolbar: false,
     });
   </script>
 </body>
